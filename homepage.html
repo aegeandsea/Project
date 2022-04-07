@@ -5,10 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="stylesheet" href="styles/stylesheet.css">
 </head>
 <body>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quaerat sint nihil aut vitae quae temporibus delectus voluptatibus. Corporis nulla numquam libero. Veniam tenetur minima repellat possimus debitis! Explicabo, harum.
-    </p>
+    <!-- nav bar -->
+   <div class = "nav">
+       <ul>
+           <li> <a href="homepage.html">Home</a></li>
+           <li> <a href="#About">About</a></li>
+           <li class ="dropdown">
+               <a href="#Track">Track</a>
+               <div class = "dropdownbar">
+               <a href="#Goals">Goals</a>
+               <a href="Exercise.html">Exercise</a>
+               <a href="#Food Macros">Food Macros</a>
+            </div>
+            </li>
+            <li class="dropdown">
+                <a href="#MyProfile">My Profile</a>
+                <div class = "dropdownbar">
+                <a href="#Logout">Logout</a>
+                </div>
+            </li>
+            <div class = "entry">
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            </div>
+       </ul>
+   </div>
+   <hr>
+   <div class = "container">
+       <h1 class = "block title">
+           Fitness Tracker
+       </h1>
+   </div>
+
+   <div>
+    <img src = "placeholder" alt = "Food" class = "my-image">
+   </div>
+
+   <p class = "subtitle">
+       Invest in Yourself
+   </p>
+
+   <div class = "footer">
+       &copy; Fitness Tracker
+   </div>
+
 </body>
 </html>

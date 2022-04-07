@@ -2,10 +2,10 @@
 ul{
     list-style-type:none;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     overflow: hidden;
     background-color: black;
-    font-size: 16px;
+    font-size: 18px;
     opacity: 0.9;
 }
 
@@ -14,24 +14,49 @@ li {
 }
 
 li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 8px 16px;
-    text-decoration: none;
+   padding: 20px;
 }
 
 li a:hover{
     background-color: 111;
 }
 
-.container{
-   padding-left: 250px;
-   padding-right: 250px;
-   padding-top: 25px;
-    background-color: white;
+.dropdownbar{
+  display:none;
+  position:absolute;
+  z-index: 1;
+}
+
+.dropdownbar a{
+  display:block;
+  padding-bottom: 10px;
+  text-align: left;
+  color: white;
+  background: black;
+}
+
+.dropdown:hover .dropdownbar{
+  display:block;
+  position:absolute;
+}
+
+.entry{
+  float:right;
+  margin-right: 50px;
 }
 /***********************************/
+
+.footer{
+
+  color: white;
+}
+
+h1.title {
+  color: black;
+  text-align: center;
+  margin-top: 50px;
+
+}
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -42,11 +67,29 @@ div{
 
 a{
     text-decoration: none;
+    color: white;
 }
 
+.my-image{
+  margin:auto;
+  padding: top 0px;
+  display:block;
+  width: 100%;
+  max-width: 100px;
+
+}
 /*FORM STYLES*/
  input[type=text], input[type=password] {
-    width: 100%;
+    width: 400px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  input[type=date], input[type=number] {
+    width: 200px;
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
@@ -65,15 +108,14 @@ a{
   }
 
 
-/*register & login buttons*/
-  .registerbtn, .loginbtn{
+/*buttons*/
+  .registerbtn, .loginbtn, .exbtn{
     background-color: black;
     color: white;
     padding: 16px 20px;
-    margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 100px;
     opacity: 0.9;
   }
   
@@ -87,9 +129,16 @@ a{
   }
 
 
-div.login_container{
+div.login_container, div.exercise-container{
     margin-left: 500px;
    margin-right: 500px;
-   padding-top: 65px;  
+   margin-top: 50px;
   }
+
+div.register_container{
+  margin-left: 500px;
+   margin-right: 500px;
+}
+
+
   /**********************************/
