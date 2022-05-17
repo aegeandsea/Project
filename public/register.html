@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles/stylesheet.css">
+</head>
+<body>
+    
+    <!-- nav bar -->
+    <div class = "nav">
+        <ul>
+            <li> <a href="homepage.html">Home</a></li>
+            <li class ="dropdown">
+                <a href="#Track">Track</a>
+                <div class = "dropdownbar">
+                <a href="#Goals">Goals</a>
+                <a href="Exercise.html">Exercise</a>
+                <a href="#Food Macros">Food Macros</a>
+             </div>
+             </li>
+             <li class="dropdown">
+                 <a href="#MyProfile">My Profile</a>
+                 <div class = "dropdownbar">
+                <a href = "bmi.html">Calculate BMI</a>
+                <a id ="logout">Logout</a>
+                 </div>
+             </li>
+             <div class = "entry">
+             <a href="register.html">Register</a>
+             <a> | </a>  
+             <a href="login.html">Login</a>
+             </div>
+        </ul>
+    </div>
+<!-- Register Form -->
+    <form class = "basic-form" id = "reg-form"></form>
+    <div class ="register_container">
+    <form class = "box" style = "max-width: 200px; margin: auto;" action ="#login">
+
+        <h1>Register</h1>
+        <p>Create an account.</p>
+
+        <label for="fname"><b>First Name:</b></label>
+        <input type="text" placeholder ="Enter First Name" name="fname" id="fname" required> <br>
+
+        <label for="lname"><b>Last Name:</b></label>
+        <input type="text" placeholder ="Enter Last Name" name="lname" id="lname" required> <br>
+
+        <label for="birthday"><b>Birthday:</b></label>
+        <input type="date" placeholder ="Enter Birthday" name="bday" id="bday" required> <br>   
+
+        <label for = "height"> <b>Height:</b></label>
+        <input type = "number" placeholder = "Enter Height in inches" name = "height" id ="height" required> <br>
+
+        <label for = "weight"> <b>Weight:</b></label>
+        <input type = "number" placeholder = "Enter Weight in lbs" name = "weight" id = "weight" required> <br>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required> <br>
+
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" id="username" required>  <br>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required> <br>
+
+        <label for="psw-repeat"><b>Confirm Password</b></label>
+        <input type="password" placeholder="Confirm Password" name="psw-conf" id="psw-conf" required>
+        <hr>
+
+        <button type="submit" class="registerbtn">Register</button>
+    </div>
+    </form>
+
+    <div class="signin">
+    <p>Already have an account? <a href="login.html">Sign in</a>.</p>
+    </div>
+
+    
+    <script type = "module" src = "javascript/main.js"></script>
+<script type = "module" src = "javascript/profile.js"></script>
+</body>
+</html>

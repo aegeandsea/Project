@@ -1,0 +1,30 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "an app that tracks that calculates the user's bmi, food intake, and exercise logs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aegeandsea/Project.git"
+  },
+  "keywords": [
+    "fitness",
+    "health"
+  ],
+  "author": "Aegean Aragon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aegeandsea/Project/issues"
+  },
+  "homepage": "https://github.com/aegeandsea/Project#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

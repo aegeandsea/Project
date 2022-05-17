@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="styles/stylesheet.css">
+</head>
+<body>
+    <!-- nav bar -->
+    <div class = "nav">
+        <ul>
+            <li> <a href="homepage.html">Home</a></li>
+            <li class ="dropdown">
+                <a href="#Track">Track</a>
+                <div class = "dropdownbar">
+                <a href="#Goals">Goals</a>
+                <a href="Exercise.html">Exercise</a>
+                <a href="#Food Macros">Food Macros</a>
+             </div>
+             </li>
+             <li class="dropdown">
+                 <a href="profile.html">My Profile</a>
+                 <div class = "dropdownbar">
+                <a href = "bmi.html">Calculate BMI</a>
+                <a id ="logout">Logout</a>
+                 </div>
+             </li>
+             <div class = "entry">
+             <a href="register.html">Register</a>
+             <a> | </a>  
+             <a href="login.html">Login</a>
+             </div>
+        </ul>
+    </div>
+<hr>
+
+<main>
+<section id = "profile"> </section>
+<section id = "editForm"></section>
+</main>
+
+<script type = "module" src = "javascript/main.js"></script>
+<script type = "module" src = "javascript/profile.js"></script>
+</body>
+</html>
