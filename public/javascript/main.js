@@ -1,21 +1,39 @@
-//***/
 const nav = document.querySelector('nav');
 if(getCurrentUser()) {
+  /**nav bar for when user is logged in */
   nav.innerHTML = `
-    <ul>
-      <li><a href="bmi.html">Calculate</a></li>
-      <li><a href="profile.html">Profile</a></li>
-      <li><a id="logout">Logout</a></li>
-    </ul>
+  <ul>
+  <li> <a href="homepage.html">Home</a></li>
+  <li class ="dropdown">
+      <a href="#Track">Track</a>
+      <div class = "dropdownbar">
+      <a href="#Goals">Goals</a>
+      <a href="Exercise.html">Exercise</a>
+      <a href="#Food Macros">Food Macros</a>
+   </div>
+   </li>
+   <li class="dropdown">
+      <a href="profile.html">My Profile</a>
+       <div class = "dropdownbar">
+      <a href = "bmi.html">Calculate BMI</a>
+     <a id ="logout">Logout</a>
+       </div>
+   </li>
+</ul>
   `;
-} else {
+} /*nav bar for when user is not logged in*/ else {
   nav.innerHTML = `
-    <ul>
-      <li><a href="bmi.html">Calculate</a></li>
-      <li><a href="login.html">Login</a></li>
-      <li><a href="register.html">Sign Up</a></li>
-    </ul>
-  `
+  <ul>
+  <li> <a href="homepage.html">Home</a></li>
+      <a href = "bmi.html">Calculate BMI</a>
+   </li>
+   <div class = "entry">
+   <a href="register.html">Register</a>
+   <a> | </a>  
+   <a href="login.html">Login</a>
+   </div>
+</ul>
+`
 }
   
 //fetch method:

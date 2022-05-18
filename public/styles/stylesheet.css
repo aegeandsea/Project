@@ -9,7 +9,6 @@ ul{
     opacity: 0.9;
 }
 
-
 li {
     float:left;
 }
@@ -53,7 +52,6 @@ main{
 }
 
 /***********************************/
-
 .footer{
   color: white;
   background-color: black;
@@ -122,17 +120,7 @@ a{
 
 
 /*buttons*/
-  .registerbtn, .loginbtn, .exbtn {
-    background-color: black;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100px;
-    opacity: 0.9;
-  }
-
-  form input [type = "submit"] {
+  .registerbtn, .loginbtn, .exbtn, form input[type="submit"]  {
     background-color: black;
     color: white;
     padding: 16px 20px;
@@ -187,6 +175,21 @@ div.bmi_container{
   border-radius:15px;
   margin: 30px auto;
   padding: 40px 50px;
+}
+
+#profile div {
+  width: fit-content;
+  margin: 40px auto;
+}
+
+#editForm{
+  width: fit-content;
+  margin: 40px auto;
+}
+
+#editForm form{
+  display: inline-block;
+  margin: 40px;
 }
 
   /**********************************/

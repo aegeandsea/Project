@@ -50,7 +50,7 @@ function editProfile() {
 }
 
 function deleteAccount() {
-    if(confirm('Are you sure you want to delete your account???')) {
+    if(confirm('Are you sure you want to delete your account?')) {
       fetchData('/users/delete', {userId: user.userId}, "DELETE")
       .then((data) => {
         if(!data.message) {

@@ -1,4 +1,4 @@
-const con = require("./db_connect");
+const con = require("./db.js");
 
 async function createTable() {
     let sql = `CREATE TABLE IF NOT EXISTS users (
